@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    height: 100%;
+    font-family: Poppins;
+}
+
+#title {
+  font-family: Poppins;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+#form-container {
+    width: 720px;
+}
+
+form {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h3{
+    font-weight: 500;
+}
+
+label {
+    font-size: 14px;
+    color: #374151;
+    line-height: 21px;
+}
+
+a {
+    color: #4F46E5;
+}
+
+.back {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    background-color: #4F46E5;
+    color: white;
+    padding:7px 12px 7px 12px;
+    font-size: 14px;
+    width: 110px;
+}
+
+::placeholder {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+#no-page-found {
+    width: 68%;
+}
+
+.hero-para {
+    color: #6C6B80;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#draft-tag {
+    padding: 4px 8px 4px 8px;
+    background-color: #FFFBEB;
+    color: #D97706;
+    border-radius: 4px;
+}
+
+#scheduled-tag {
+    padding: 4px 8px 4px 8px;
+    background-color: #EFF6FF;
+    color: #2563EB;
+    border-radius: 4px;
+}
+
+#published-tag {
+    padding: 4px 8px 4px 8px;
+    background-color: #ECFDF5;
+    color: #059669;
+    border-radius: 4px;
+}
+
+.whiteBtn {
+    border: 1px solid #D1D1DB;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.greenBtn {
+    background-color: #059669;
+}
+
+#deleteBtn {
+    background-color: #e52f2f;
+}
+
+#previewBtn {
+    background-color: #D97706;
+}
+
+.disabledBtn {
+    background-color:  #8781f9;
+}
+
+@media (max-device-width: 720px) {
+    #form-container {
+      width: 0;
+      background-color: blueviolet;
+    }
+
+    .hello {
+        background-color: blueviolet;
+    }
+}
+
+

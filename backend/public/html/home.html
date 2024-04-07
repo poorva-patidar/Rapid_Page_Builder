@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body style="height: 100vh;">
+    <div id="outer" class="d-flex h-100 w-100">
+      <!-- SIDE BAR -->
+      <div
+        class="border d-flex side-bar align-items-center justify-content-between flex-column"
+        style="height: 100vh; width: 70px"
+      >
+        <div class="d-flex align-items-center flex-column">
+          <a href="home.html"
+            ><img src="../images/logo.svg" alt="logo" class="my-2"
+          /></a>
+          <img src="../images/dashboard_active.svg" alt="dashboard logo" />
+          <hr width="40px" />
+          <a href="pageList.html"
+            ><img src="../images/page_list.svg" alt="page list logo"
+          /></a>
+        </div>
+        <div class="d-flex align-items-center flex-column">
+          <img
+            id="notification"
+            src="../images/notification.svg"
+            alt="notification logo"
+            class="mb-3"
+          />
+          <img
+            src="../images/out.png"
+            alt="logout"
+            class="mb-3"
+            width="30px"
+            height="30px"
+            id="logout"
+          />
+          <img
+            id="profilepic"
+            src="../images/profile-default.svg"
+            alt="user profile photo"
+            class="mb-3 propic rounded-circle"
+            width="35px"
+            height="35px"
+          />
+        </div>
+      </div>
+
+      <div id="content" class="w-100 d-flex">
+        <!-- NO PAGE FOUND -->
+        <div
+          id="no-page-found"
+          class="d-flex align-items-center justify-content-center w-100 d-none">
+          <div class="d-flex align-items-center justify-content-between border rounded-3 p-4">
+            <div class="ps-5">
+              <h3 class="pb-3">No Pages found</h3>
+              <p class="pb-5 hero-para">
+                Looks like you don't have any pages yet. Let's add a new page.
+              </p>
+              <button id="addPage" onclick="addPageListener()">
+                + Add Page
+              </button>
+            </div>
+            <div>
+              <img src="../images/hero.svg" alt="hero image" />
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100" id="pages-found">
+          <!-- NAVIGATION -->
+          <div
+            class="border-bottom border-1 w-100 py-4 d-flex justify-content-between align-items-center px-5"
+          >
+            <h2 class="back">My Pages</h2>
+            <button id="addPage" onclick="addPageListener()">+ Add Page</button>
+          </div>
+          <!-- NAV BAR END -->
+
+          <div id="loading-msg" class="d-flex justify-content-center mt-5">
+            <p class="px-5">fetching your pages list....</p>
+          </div>
+
+          <!-- PAGE LIST -->
+          <div id="page-list" class="w-100 mt-5 overflow-auto" style="height: 77vh;"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/home.js"></script>
+  </body>
+</html>

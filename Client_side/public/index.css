@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    height: 100%;
+    font-family: Poppins;
+}
+
+h3{
+    font-weight: 500;
+}
+
+
+.back {
+    color: black;
+    font-size: 24px;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    background-color: #4F46E5;
+    color: white;
+    padding:7px 12px 7px 12px;
+    font-size: 14px;
+    width: 100px;
+}
+
+#no-page-found {
+    width: 68%;
+}
+
+.hero-para {
+    color: #6C6B80;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+
+
+
+
